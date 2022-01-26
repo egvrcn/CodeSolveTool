@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>CodeSolveTool.Answers-20220126-221738</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1466 (21H1/May2021Update)
+Intel Core i5-7300HQ CPU 2.50GHz (Kaby Lake), 1 CPU, 4 logical and 4 physical cores
+.NET SDK=6.0.101
+  [Host]     : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT DEBUG  [AttachedDebugger]
+  Benchmarks : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+</code></pre>
+<pre><code>Job=Benchmarks  RunStrategy=ColdStart  
+</code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>         input</th><th>  Mean</th><th>Error</th><th>StdDev</th><th> Median</th><th>Rank</th><th>Gen 0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>Question1</td><td>abcabcbc</td><td>24.29 &mu;s</td><td>73.99 &mu;s</td><td>218.17 &mu;s</td><td>2.200 &mu;s</td><td>1</td><td>-</td><td>648 B</td>
+</tr><tr><td>Question1</td><td>klmps(...)seklm [44]</td><td>28.55 &mu;s</td><td>73.38 &mu;s</td><td>216.37 &mu;s</td><td>6.250 &mu;s</td><td>2</td><td>-</td><td>1,144 B</td>
+</tr><tr><td>Question1</td><td>ehdi(...)vbzb [2000]</td><td>124.73 &mu;s</td><td>87.88 &mu;s</td><td>259.11 &mu;s</td><td>98.100 &mu;s</td><td>3</td><td>-</td><td>1,144 B</td>
+</tr><tr><td>Question1</td><td>&#39;jj(...)fd&#39; [50002]</td><td>2,029.92 &mu;s</td><td>98.47 &mu;s</td><td>290.33 &mu;s</td><td>1,987.900 &mu;s</td><td>4</td><td>-</td><td>1,792 B</td>
+</tr><tr><td>Question1</td><td>&#39;u(...)x&#39; [1000002]</td><td>37,755.68 &mu;s</td><td>957.66 &mu;s</td><td>2,823.67 &mu;s</td><td>37,021.100 &mu;s</td><td>5</td><td>-</td><td>1,792 B</td>
+</tr><tr><td>Question2</td><td>[{}]([)]</td><td>31.93 &mu;s</td><td>91.95 &mu;s</td><td>271.13 &mu;s</td><td>4.300 &mu;s</td><td>1</td><td>-</td><td>1,296 B</td>
+</tr><tr><td>Question2</td><td>{(([)(...)[}]{} [25]</td><td>32.51 &mu;s</td><td>94.75 &mu;s</td><td>279.38 &mu;s</td><td>3.900 &mu;s</td><td>1</td><td>-</td><td>848 B</td>
+</tr><tr><td>Question2</td><td>[{}](...)[){] [132]</td><td>39.29 &mu;s</td><td>85.80 &mu;s</td><td>252.99 &mu;s</td><td>13.200 &mu;s</td><td>2</td><td>-</td><td>4,520 B</td>
+</tr><tr><td>Question2</td><td>({[](...)[[]] [2320]</td><td>153.20 &mu;s</td><td>101.63 &mu;s</td><td>299.64 &mu;s</td><td>123.950 &mu;s</td><td>3</td><td>-</td><td>61,408 B</td>
+</tr><tr><td>Question2</td><td>{[((...)])) [675840]</td><td>28,740.59 &mu;s</td><td>572.35 &mu;s</td><td>1,371.31 &mu;s</td><td>28,539.850 &mu;s</td><td>4</td><td>5000.0000</td><td>17,572,928 B</td>
+</tr><tr><td>Question3</td><td>15 3 (...) 11 3 [34]</td><td>56.72 &mu;s</td><td>163.04 &mu;s</td><td>480.73 &mu;s</td><td>7.900 &mu;s</td><td>1</td><td>-</td><td>1,480 B</td>
+</tr><tr><td>Question3</td><td>5 9 9 1 4 3 3 5 1</td><td>62.66 &mu;s</td><td>180.38 &mu;s</td><td>531.87 &mu;s</td><td>8.250 &mu;s</td><td>1</td><td>-</td><td>1,280 B</td>
+</tr><tr><td>Question3</td><td>-351(...) -71 [8534]</td><td>284.06 &mu;s</td><td>251.05 &mu;s</td><td>740.21 &mu;s</td><td>202.500 &mu;s</td><td>2</td><td>-</td><td>153,672 B</td>
+</tr><tr><td>Question3</td><td>402(...)-23 [23303]</td><td>471.21 &mu;s</td><td>236.03 &mu;s</td><td>695.94 &mu;s</td><td>393.100 &mu;s</td><td>3</td><td>-</td><td>313,752 B</td>
+</tr><tr><td>Question3</td><td>968(...)800 [745469]</td><td>12,709.27 &mu;s</td><td>649.46 &mu;s</td><td>1,914.94 &mu;s</td><td>12,550.500 &mu;s</td><td>4</td><td>1000.0000</td><td>7,974,792 B</td>
+</tr></tbody></table>
+</body>
+</html>

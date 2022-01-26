@@ -1,0 +1,1 @@
+﻿dotnet test --logger "console;verbosity=detailed" $PSScriptRoot\..\CodeSolveTool.Test\bin\Debug\net6.0\CodeSolveTool.Test.dll
